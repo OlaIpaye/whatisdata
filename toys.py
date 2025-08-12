@@ -16,6 +16,15 @@ toy_box.extend(new_toys)
 # Changes Race Car’s color from Red to Green
 toy_box[1]["color"] = "Green"
 
+# Removes duplicate toys = toys of data
+# del(toy_box[4])
+
+unique_toys = []
+
+for toy in toy_box:
+    if toy not in unique_toys:
+        unique_toys.append(toy)
+
 # Prints all toys = all row of data
 print("Here's what's in my toy box")
 for toy in toy_box:
@@ -23,4 +32,4 @@ for toy in toy_box:
 
 # Prints out number of toys in the box
 print("\nNumber of toys:", len(toy_box))
-
+print(f"\nNumber of unique toys:", len(unique_toys))
