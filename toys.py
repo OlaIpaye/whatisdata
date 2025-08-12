@@ -13,6 +13,9 @@ new_toys = [{"name": "Puzzles", "type": "Creative", "color": "Multi"},
 
 toy_box.extend(new_toys)
 
+# Changes Race Car’s color from Red to Green
+toy_box[1]["color"] = "Green"
+
 # Prints all toys = all row of data
 print("Here's what's in my toy box")
 for toy in toy_box:
